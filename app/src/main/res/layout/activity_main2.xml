@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/root"
+    tools:context="br.com.androidpro.animationstransitions.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher_round"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/button"
+        android:tag="scene"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="AÇÃO" />
+
+    <Button
+        android:id="@+id/prevScene"
+        android:tag="scene"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="VOLTAR A CENA"
+        android:onClick="changeScene" />
+
+</LinearLayout>
